@@ -1,0 +1,72 @@
+/* Additional CSS for the single page app */
+
+/* header box */
+.header {
+	width: 80%;
+	margin-top: 150px;
+}
+
+/* h1 */
+.heading1 {
+    font-weight: 500;
+    font-size: 92px;
+    line-height: 1em;
+}
+
+/* h1 for smaller devices */
+@media (max-width: 576px) {
+    .header {
+        width: 100%;
+    }
+    .heading1 {
+        font-size: 36px;
+    }
+}
+
+/* small heading */
+.paragraph1 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1em;
+}
+
+/* p */
+.paragraph2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1em;
+}
+
+/* p- black */
+.paragraph3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: white;
+}
+
+
+/* h2 */
+.heading2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1em;
+}
+
+/* h2-white */
+.heading3 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1em;
+    color: white;
+}
+
+/* hero section image */
+.hero-img {
+    width: 100%;
+}
+
+/* black background */
+.bg1 {
+    background-color: black;
+}
