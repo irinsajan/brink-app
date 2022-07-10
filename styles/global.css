@@ -66,6 +66,16 @@
     width: 100%;
 }
 
+/* column image change with small devices */
+@media (max-width: 576px) {
+    .col-img1 {
+        padding-right: 0px;
+    }
+    .col-img2 {
+        padding-left: 0px;
+    }
+}
+
 /* black background */
 .bg1 {
     background-color: black;
@@ -82,4 +92,18 @@
 .overlap {
     margin-top: -15%;
     margin-left: -15%;
+}
+
+/* avoid overlap on smaller devices */
+@media (max-width: 576px) {
+    .overlap {
+        margin-top: 20px;
+    }
+}
+
+/* change order on smaller devices */
+@media (max-width: 576px) {
+    .footer-columns {
+        flex-flow: column-reverse;
+    }
 }

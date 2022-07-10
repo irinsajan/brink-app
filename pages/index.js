@@ -23,8 +23,8 @@ export default function Home() {
         <section>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-6 ps-0 mb-3"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
-              <div className="col-md-6 pe-0 mb-3"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
+              <div className="col-md-6 ps-0 mb-3 col-img1"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
+              <div className="col-md-6 pe-0 mb-3 col-img2"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
             </div>
           </div>
         </section>
@@ -116,8 +116,7 @@ export default function Home() {
                   <img className="hero-img" src="https://via.placeholder.com/700x400/5F35F7"/>                
               </div>
               <div className="col-md-8 ms-auto overlap">                
-                  <img className="hero-img" src="https://via.placeholder.com/700x400/4425B2;
-"/>                
+                  <img className="hero-img" src="https://via.placeholder.com/700x400/4425B2"/>                
               </div>
             </div>            
           </div>
@@ -132,14 +131,14 @@ export default function Home() {
                 <hr className="style-one"></hr>
               </div>
             </div>
-            <div className="row bg1 py-4">
-              <div className="col-md-4">
+            <div className="row py-4 footer-columns">
+              <div className="col-md-4 mb-3">
                 <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-3">
                 <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-3">
                 <h2 className="heading3 pe-5">
                   Proin enim enim, tincidunt consequat sollicitudin.
                 </h2>
