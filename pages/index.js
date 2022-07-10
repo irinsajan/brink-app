@@ -23,8 +23,8 @@ export default function Home() {
         <section>
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-6 ps-0"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
-              <div className="col-md-6 pe-0"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
+              <div className="col-md-6 ps-0 mb-3"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
+              <div className="col-md-6 pe-0 mb-3"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
             </div>
           </div>
         </section>
@@ -66,7 +66,7 @@ export default function Home() {
                   <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
                 </div>
               </div>
-              <div className="col-md-4">                
+              <div className="col-md-4 mb-3">                
                   <img className="hero-img" src="https://via.placeholder.com/700x1030/5F35F7"/>                
               </div>
               <div className="col-md-4">
@@ -91,13 +91,13 @@ export default function Home() {
                 </h2>
               </div>
               <div className="col-md-6">
-                <p className="paragraph3 ps-5">
+                <p className="paragraph3">
                   Aliquam vel orci pulvinar, porta velit in, volutpat neque. Nam vel leo nec nibh 
                   tempus congue. Morbi rhoncus bibendum enim sit amet pulvinar. Quisque lobortis commodo 
                   nunc, a rhoncus diam aliquam ac. Pellentesque non augue ullamcorper arcu facilisis bibendum. 
                   Nulla quis tincidunt turpis. Sed quis erat arcu. 
                 </p>
-                <p className="paragraph3 ps-5">
+                <p className="paragraph3">
                   Phasellus gravida felis quis ex mattis, sed suscipit tellus tincidunt. In imperdiet dapibus 
                   vehicula. In auctor nec nibh vestibulum ornare. Morbi porta, enim hendrerit consectetur ultrices, 
                   libero dui ultricies libero, vel rutrum sem magna quis augue. Nulla quis magna at lorem sodales gravida.
@@ -105,7 +105,30 @@ export default function Home() {
               </div>              
             </div>
           </div>
+        </section>
 
+        {/* footer section */}
+        <section>
+          <div className="container">
+            <div className="row bg1 py-4 justify-content-center">
+              <div className="col-md-11">
+                <hr className="style-one"></hr>
+              </div>
+            </div>
+            <div className="row bg1 py-4">
+              <div className="col-md-4">
+                <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+              </div>
+              <div className="col-md-4">
+                <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+              </div>
+              <div className="col-md-4">
+                <h2 className="heading3 pe-5">
+                  Proin enim enim, tincidunt consequat sollicitudin.
+                </h2>
+              </div>
+            </div>
+          </div>
         </section>
        
       </main>    

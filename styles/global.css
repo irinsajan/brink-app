@@ -70,3 +70,10 @@
 .bg1 {
     background-color: black;
 }
+
+/* break line */
+hr.style-one {
+    border: 0;
+	height: 1px;
+	border-bottom: 1px solid #ffffff;
+}
