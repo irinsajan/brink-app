@@ -72,8 +72,14 @@
 }
 
 /* break line */
-hr.style-one {
+.style-one {
     border: 0;
 	height: 1px;
 	border-bottom: 1px solid #ffffff;
+}
+
+/* overlap images */
+.overlap {
+    margin-top: -15%;
+    margin-left: -15%;
 }

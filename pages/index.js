@@ -56,7 +56,7 @@ export default function Home() {
 
         {/* gallery section */}
         <section>
-          <div className="container">
+          <div className="container-fluid">
             <div className="row mb-4">
               <div className="col-md-4">
                 <div className="row mb-3">
@@ -81,10 +81,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* black background text section */}
+        {/* black background sections */}
         <section>
-          <div className="container">
-            <div className="row bg1 pt-5">
+          <div className="container-fluid bg1">
+            <div className="row pt-5">
               <div className="col-md-6">
                 <h2 className="heading3 pe-5">
                   Proin enim enim, tincidunt consequat sollicitudin.
@@ -102,15 +102,32 @@ export default function Home() {
                   vehicula. In auctor nec nibh vestibulum ornare. Morbi porta, enim hendrerit consectetur ultrices, 
                   libero dui ultricies libero, vel rutrum sem magna quis augue. Nulla quis magna at lorem sodales gravida.
                 </p>
-              </div>              
-            </div>
+              </div> 
+            </div> 
           </div>
         </section>
 
+
+        {/* black background overlap images */}
+        <section>
+          <div className="container-fluid bg1">
+            <div className="row">
+              <div className="col-md-8">                
+                  <img className="hero-img" src="https://via.placeholder.com/700x400/5F35F7"/>                
+              </div>
+              <div className="col-md-8 ms-auto overlap">                
+                  <img className="hero-img" src="https://via.placeholder.com/700x400/4425B2;
+"/>                
+              </div>
+            </div>            
+          </div>
+        </section>
+       
+
         {/* footer section */}
         <section>
-          <div className="container">
-            <div className="row bg1 py-4 justify-content-center">
+          <div className="container-fluid bg1">
+            <div className="row py-4 justify-content-center">
               <div className="col-md-11">
                 <hr className="style-one"></hr>
               </div>
