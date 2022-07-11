@@ -67,7 +67,7 @@
 }
 
 /* column image change with small devices */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .col-img1 {
         padding-right: 0px;
     }
@@ -95,14 +95,14 @@
 }
 
 /* avoid overlap on smaller devices */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .overlap {
         margin-top: 20px;
     }
 }
 
 /* change order on smaller devices */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .footer-columns {
         flex-flow: column-reverse;
     }
