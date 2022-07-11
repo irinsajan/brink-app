@@ -61,11 +61,6 @@
     color: white;
 }
 
-/* hero section image */
-.hero-img {
-    width: 100%;
-}
-
 /* column image change with small devices */
 @media (max-width: 768px) {
     .col-img1 {
@@ -107,3 +102,11 @@
         flex-flow: column-reverse;
     }
 }
+
+/* adjust size for carousel of gallery */
+.carousel-img {
+    width: auto;
+    height: 500px;
+    max-height: 500px;
+}
+

@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 export default function Home() {
   return (
@@ -22,38 +24,36 @@ export default function Home() {
         {/* 2 image hero section */}
         <section>
           <div className="container-fluid">
+            
+            {/* only for larger devices */}
             <div className="row d-none d-md-flex">
-              <div className="col-md-6 ps-0 mb-3 col-img1"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
-              <div className="col-md-6 pe-0 mb-3 col-img2"><img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/></div>
-            </div>
-          
+              <div className="col-md-6 ps-0 mb-3 col-img1"><img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/></div>
+              <div className="col-md-6 pe-0 mb-3 col-img2"><img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/></div>
+            </div>        
 
-            <div id="carouselExampleSlidesOnly" class="carousel slide d-block d-md-none" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block hero-img" src="https://via.placeholder.com/700x500/5F35F7" />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block hero-img" src="https://via.placeholder.com/700x500/5F35F7" />
-                </div>
-              </div>
+            {/* only for smaller devices */}
+            <div className="row d-block d-md-none">
+              <Carousel showThumbs={false}>
+                <div className="col-md-6 ps-0 mb-3 col-img1"><img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/></div>
+                <div className="col-md-6 pe-0 mb-3 col-img2"><img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/></div>                
+              </Carousel>
             </div>
+
           </div>
-
         </section>
 
         {/* text section */}
         <section>
           <div className="container">
             <div className="row justify-content-center mt-5 mb-4">
-              <div className="col-md-4">
+              <div className="col-md-5">
                 <h2 className="heading2 text-center">
                   Suspendisse tincidunt vulputate ex, a laoreet neque luctus vitae.
                 </h2>
               </div>
             </div>
             <div className="row justify-content-center mb-5">
-              <div className="col-md-5">
+              <div className="col-md-6">
                 <p className="paragraph2">
                   Suspendisse tincidunt vulputate ex, a laoreet neque luctus vitae. Quisque maximus ante sapien, at 
                   phareta sam sagittis eu. Maecenas nibh leo, interdum ac malesuada quis, tempus vel lacus.
@@ -70,31 +70,52 @@ export default function Home() {
         {/* gallery section */}
         <section>
           <div className="container-fluid">
-            <div className="row mb-4">
+            {/* only for larger devices */}
+            <div className="row mb-4 d-none d-md-flex">
               <div className="col-md-4">
                 <div className="row mb-3">
-                  <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                  <img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/>
                 </div>
                 <div className="row mb-3">
-                  <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                  <img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/>
                 </div>
               </div>
               <div className="col-md-4 mb-3">                
-                  <img className="hero-img" src="https://via.placeholder.com/700x1030/5F35F7"/>                
+                  <img className="w-100" src="https://via.placeholder.com/700x1030/5F35F7"/>                
               </div>
               <div className="col-md-4">
                 <div className="row mb-3">
-                  <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                  <img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/>
                 </div>
                 <div className="row mb-3">
-                  <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                  <img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/>
                 </div>
               </div>
+            </div>
+            {/* only for smaller devices */}
+            <div className="row mb-4 d-block d-md-none">
+              <Carousel showThumbs={false}>
+                <div>
+                  <img className="carousel-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                </div>
+                <div>
+                  <img className="carousel-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                </div>
+                <div>                
+                    <img className="carousel-img" src="https://via.placeholder.com/700x1030/5F35F7"/>                
+                </div>
+                <div>
+                  <img className="carousel-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                </div>
+                <div>
+                  <img className="carousel-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                </div>
+              </Carousel>
             </div>
           </div>
         </section>
 
-        {/* black background sections */}
+        {/* black background sections with different order on different sized screens*/}
         <section>
           <div className="container-fluid bg1">
             <div className="row pt-5">
@@ -112,7 +133,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="order-md-5 col-md-8">                
-                  <img className="hero-img" src="https://via.placeholder.com/700x400/5F35F7"/>                
+                  <img className="w-100" src="https://via.placeholder.com/700x400/5F35F7"/>                
               </div>
               <div className="order-md-3 col-md-6">
               </div>
@@ -124,7 +145,7 @@ export default function Home() {
                 </p>
               </div>               
               <div className="order-md-last col-md-8 ms-auto overlap">                
-                  <img className="hero-img" src="https://via.placeholder.com/700x400/4425B2"/>                
+                  <img className="w-100" src="https://via.placeholder.com/700x400/4425B2"/>                
               </div>
             </div>
           </div>
@@ -142,10 +163,10 @@ export default function Home() {
             </div>
             <div className="row py-4 footer-columns">
               <div className="col-md-4 mb-3">
-                <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                <img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/>
               </div>
               <div className="col-md-4 mb-3">
-                <img className="hero-img" src="https://via.placeholder.com/700x500/5F35F7"/>
+                <img className="w-100" src="https://via.placeholder.com/700x500/5F35F7"/>
               </div>
               <div className="col-md-4 mb-3">
                 <h2 className="heading3 pe-5">
